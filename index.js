@@ -1,3 +1,3 @@
 
-import main , {loadData} from "./src/main";
-main();
+const main = require("./src/main")
+main()

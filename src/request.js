@@ -1,11 +1,11 @@
-import https from 'https';
-import axios from 'axios';
+const https = require('https')
+const axios = require('axios')
 
 const axiosInstance = axios.create({
-    timeout: 1000,
-    httpsAgent: new https.Agent({  
-      rejectUnauthorized: false
-    }) 
-  });
+  timeout: 2000,
+  httpsAgent: new https.Agent({
+    rejectUnauthorized: false
+  })
+})
 
-export default axiosInstance;
+module.exports = axiosInstance

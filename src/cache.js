@@ -1,4 +1,4 @@
-export default  class CacheData{
+module.exports = class CacheData{
     #data = {};
     add(key, value) {
        this.#data[key] = value;
